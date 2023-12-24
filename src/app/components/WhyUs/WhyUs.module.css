@@ -23,6 +23,7 @@
 .secondContent {
   display: flex;
   justify-content: space-between;
+  gap: 3.75rem;
 }
 .card {
   display: flex;
