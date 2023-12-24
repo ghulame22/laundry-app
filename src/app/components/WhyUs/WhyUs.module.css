@@ -1,0 +1,59 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 7.44rem 0;
+  gap: 3.69rem;
+}
+.firstContent {
+  display: flex;
+  justify-content: space-between;
+  gap: 13rem;
+}
+.firstContent :nth-child(1) {
+  color: #21203c;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.firstContent :nth-child(2) {
+  color: #8a8a9b;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 2rem; /* 177.778% */
+}
+.secondContent {
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  display: flex;
+  align-items: center;
+  border-radius: 6.875rem;
+  background: #fbfbfb;
+  padding: 1.38rem 2.25rem;
+  gap: 1.37rem;
+}
+.card p {
+  color: #21203c;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 150%; /* 2.25rem */
+}
+
+@media only screen and (max-width: 1100px) {
+  .content {
+    gap: 2.5rem;
+    padding-top: 5.19rem;
+    padding-bottom: 5.37rem;
+  }
+  .firstContent {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  .secondContent {
+    flex-direction: column;
+    gap: 1.8rem;
+  }
+  .card p {
+    font-size: 1.25rem;
+  }
+}

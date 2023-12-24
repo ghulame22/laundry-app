@@ -1,0 +1,58 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.27rem 0 1.17rem 0;
+}
+.logoHolder {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffba48;
+  color: white;
+  height: 34px;
+  width: 34px;
+  font-size: 1.6rem;
+  border-radius: 2rem;
+  font-weight: 700;
+}
+.menuHolder ul {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  list-style-type: none;
+}
+.menuHolder li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: 0.03125rem;
+}
+.btn {
+  background: #ffba48;
+  color: white;
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 700;
+}
+.miniMenuHolder {
+  display: none;
+}
+
+@media only screen and (max-width: 1100px) {
+  .nav {
+    padding: 2rem 0;
+  }
+  .menuHolder {
+    display: none;
+  }
+  .miniMenuHolder {
+    display: inline;
+  }
+}

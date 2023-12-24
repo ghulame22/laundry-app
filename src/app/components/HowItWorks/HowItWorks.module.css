@@ -1,0 +1,88 @@
+.content {
+  display: flex;
+  padding: 6.63rem 0 7.63rem 0;
+  gap: 7.06rem;
+}
+.content > :nth-child(1) {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.content > :nth-child(1) > :nth-child(1) {
+  color: #437bd3;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2rem; /* 133.333% */
+}
+
+.content > :nth-child(1) > :nth-child(2) {
+  color: #21203c;
+  font-size: 3rem;
+  font-weight: 700;
+  max-width: 32rem;
+}
+
+.content > :nth-child(1) > :nth-child(3) {
+  color: #8a8a9b;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 2rem; /* 177.778% */
+  max-width: 25.125rem;
+}
+.btn {
+  background: #ffba48;
+  color: white;
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 700;
+}
+.content > :nth-child(2) {
+  display: grid;
+  padding: 1.56rem 0;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 7.69rem;
+  row-gap: 4.81rem;
+}
+.card {
+  display: flex;
+  gap: 2.5rem;
+}
+.card > :nth-child(1) {
+  color: #21203c;
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+.card > :nth-child(2) > :nth-child(2) {
+  color: #21203c;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 1.35rem */
+  max-width: 8rem;
+}
+
+@media only screen and (max-width: 1100px) {
+  .content {
+    flex-direction: column;
+    padding-top: 3.75rem;
+    padding-bottom: 5.06rem;
+    gap: 3.75rem;
+  }
+  .content > :nth-child(1) > :nth-child(1) {
+    font-size: 1.25rem;
+  }
+  .card {
+    gap: 1rem;
+  }
+  .content > :nth-child(1) {
+    gap: 1.25rem;
+    font-size: 1.875rem;
+  }
+  .content > :nth-child(2) {
+    column-gap: 2.5rem;
+    row-gap: 2.8rem;
+  }
+}

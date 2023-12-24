@@ -1,0 +1,91 @@
+.content {
+  display: flex;
+  justify-content: space-between;
+  padding: 4.31rem 0 3.25rem 0;
+}
+.content > :nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  gap: 1.88rem;
+}
+.content > :nth-child(1) > :nth-child(1) {
+  color: #21203c;
+  font-size: 3rem;
+  font-weight: 700;
+  max-width: 29rem;
+}
+
+.content > :nth-child(1) > :nth-child(2) {
+  color: #8a8a9b;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 2rem; /* 177.778% */
+  max-width: 27rem;
+}
+.card {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 0.5rem;
+}
+.card > :nth-child(2) > :nth-child(1) {
+  color: #21203c;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2rem; /* 133.333% */
+}
+
+.card > :nth-child(2) > :nth-child(2) {
+  color: #8a8a9b;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 2rem; /* 177.778% */
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.25rem;
+  padding: 4.63rem 7rem 2.44rem;
+  background: #fbfbfb;
+  gap: 1.87rem;
+}
+.info div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.62rem;
+}
+.info div > :nth-child(1) {
+  color: #21203c;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 2rem; /* 177.778% */
+}
+
+.info div > :nth-child(2) {
+  padding: 1rem;
+  border-radius: 0.625rem;
+  border: none;
+}
+.info > :last-child {
+  display: inline;
+}
+.btn {
+  background: #ffba48;
+  color: white;
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 1100px) {
+  .content {
+    flex-direction: column;
+    padding-top: 3.88rem;
+    gap: 3.75rem;
+  }
+  .info {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
