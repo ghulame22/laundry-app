@@ -8,6 +8,11 @@
   display: flex;
   flex-wrap: wrap;
 }
+.content > :nth-child(1) > :nth-child(2){
+  display: flex;
+  flex-direction: column;
+  gap: 1.81rem;
+}
 .content > :nth-child(2) {
   display: flex;
   gap: 0.5rem;
