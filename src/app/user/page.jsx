@@ -1,14 +1,10 @@
 import { redirect } from "next/navigation";
-import styles from "./page.module.css";
 
-export default function Home() {
+export default function User() {
   const user = false;
   if (!user) {
     redirect("/user/login");
   } else {
     redirect("/landing");
   }
-  return (
-    <div>Home</div>
-  );
 }

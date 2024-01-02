@@ -1,0 +1,47 @@
+.main {
+  display: flex;
+  min-height: 100vh;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 30%;
+  justify-content: space-between;
+  background: #00c5d2;
+  color: white;
+  padding: 4rem;
+}
+.description > :nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.logoHolder {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.logoHolder > :nth-child(2) {
+  color: #1a202c;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.description > :nth-child(1) > :nth-child(2) {
+  font-size: 2.25rem;
+  font-weight: 500;
+  line-height: 3rem; /* 133.333% */
+  max-width: 23rem;
+}
+.description > :nth-child(2) {
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration-line: underline;
+}
+.content {
+  display: flex;
+  flex: 1 1 70%;
+}
+
+@media only screen and (max-width: 1200px) {
+}
