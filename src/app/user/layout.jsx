@@ -1,6 +1,6 @@
 import Image from "next/image";
 import gloria from "@/app/assets/gloria.svg";
-import styles from "./user.module.css";
+import styles from "./User.module.css";
 
 export default async function UserLayout({ children }) {
   return (

@@ -1,6 +1,7 @@
 import Image from "next/image";
+import Google from "@/app/assets/Google.svg";
 import Facebook from "@/app/assets/Facebook.svg";
-import styles from "@/app/user/signin/SignIn.module.css";
+import styles from "@/app/user/SignInUp.module.css";
 import Link from "next/link";
 
 function page() {
@@ -8,17 +9,19 @@ function page() {
     <div className={styles.main}>
       <div>
         <Link legacyBehavior href="/user/signin" passHref>
-          <a>
+          <div>
             <span>Already have an account?</span>&nbsp;
             <span>Sign in</span>
-          </a>
+          </div>
         </Link>
       </div>
-
       <div>
         <span className={styles.firstText}>Sign Up to Gloria Laundry</span>
         <div className={styles.btnHolder}>
-          <button className={styles.gogBtn}>Sign in with Google</button>
+          <button className={styles.gogBtn}>
+            <Image src={Google} alt="Google" />
+            <span>Sign in with Google</span>
+          </button>
           <button className={styles.fbBtn}>
             <Image src={Facebook} alt="Facebook" />
           </button>
@@ -45,7 +48,7 @@ function page() {
             Sign Up
           </button>
         </div>
-        <div className={styles.inputHolder}>
+        <div>
           <label className={styles.container}>
             <input type="checkbox" />
             <span className={styles.checkmark}></span>

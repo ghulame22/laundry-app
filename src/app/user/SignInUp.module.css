@@ -5,9 +5,6 @@
   width: 100%;
   padding: 3rem;
 }
-.main > :nth-child(1) a {
-  text-decoration: none;
-}
 .main > :nth-child(1) {
   color: #202020;
   font-size: 14px;
@@ -37,7 +34,12 @@
   justify-content: space-between;
 }
 .gogBtn {
-  padding: 0.87rem 6.06rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.87rem 1.31rem;
+  padding-right: 5.86rem;
+  gap: 3.56rem;
   border-radius: 0.75rem;
   background: #4285f4;
   border: none;
@@ -51,6 +53,7 @@
   align-items: center;
   justify-content: center;
   width: 3rem;
+  height: 3rem;
   border-radius: 0.75rem;
   border: 1px solid #dcdbdd;
   background: #fff;
@@ -121,6 +124,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 0.94rem;
 }
 .container {
   display: block;
@@ -186,4 +190,35 @@
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+@media only screen and (max-width: 830px) {
+  .main {
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+  .main > :nth-child(1) {
+    align-self: center;
+    order: 2;
+  }
+  .main > :nth-child(2) {
+    order: 1;
+  }
+  .main > :nth-child(3) {
+    order: 3;
+    text-align: center;
+  }
+  .btnHolder {
+    justify-content: center;
+    gap: 1rem;
+  }
+  .gogBtn {
+    padding: 0.7rem 1rem;
+  }
+  .gogBtn > :nth-child(2) {
+    display: none;
+  }
+  .inputHolder {
+    flex-direction: column;
+  }
 }
