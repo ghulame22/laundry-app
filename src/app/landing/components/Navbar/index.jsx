@@ -24,17 +24,17 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link legacyBehavior href="/services" passHref>
+            <Link legacyBehavior href="/" passHref>
               <a>Services</a>
             </Link>
           </li>
           <li>
-            <Link legacyBehavior href="/about" passHref>
+            <Link legacyBehavior href="/" passHref>
               <a>About</a>
             </Link>
           </li>
           <li>
-            <Link legacyBehavior href="/about" passHref>
+            <Link legacyBehavior href="/" passHref>
               <a>FaQ</a>
             </Link>
           </li>
