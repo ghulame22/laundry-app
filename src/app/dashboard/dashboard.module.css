@@ -1,0 +1,18 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.description {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  padding: 1rem 1.5rem;
+  gap: 1.5rem;
+  background: #fcfbfc;
+}

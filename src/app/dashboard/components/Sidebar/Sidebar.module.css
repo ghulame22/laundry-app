@@ -1,0 +1,39 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  background: #f4f4f4;
+  padding: 1.5rem;
+  width: 15.625rem;
+  justify-content: space-between;
+}
+
+.boardList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.boardItems {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  color: #718096;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 150%; /* 1.3125rem */
+  letter-spacing: 0.0125rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.boardItems:hover:not(.active) {
+  background: #c6d0e1;
+  color: #fff;
+}
+
+.active {
+  background: #38c5d3;
+  color: #fff;
+}
