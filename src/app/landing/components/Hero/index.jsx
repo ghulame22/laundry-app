@@ -1,8 +1,8 @@
 import Image from "next/image";
-import React from "react";
 import one from "@/app/assets/one.png";
 import Tick from "@/app/assets/Tick.svg";
 import styles from "./Hero.module.css";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -20,7 +20,9 @@ const Hero = () => {
           all the quality
         </p>
         <div>
-          <button className={styles.btn}>Get started</button>
+          <Link legacyBehavior href="/user/signin">
+            <button className={styles.btn}>Get started</button>
+          </Link>
         </div>
       </div>
       <div>

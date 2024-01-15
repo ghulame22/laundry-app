@@ -1,19 +1,26 @@
 import Image from "next/image";
 import Facebook from "@/app/assets/Facebook.svg";
 import styles from "./SignIn.module.css";
+import Link from "next/link";
 
 function page() {
   return (
     <div className={styles.main}>
       <div>
-        <span>New user?</span>
-        <span>Create an acount </span>
+        <Link legacyBehavior href="/user/signup" passHref>
+          <a>
+            <span>New user?</span>&nbsp;
+            <span>Create an acount </span>
+          </a>
+        </Link>
       </div>
       <div>
         <span className={styles.firstText}>Sign in to Gloria Laundry</span>
         <div className={styles.btnHolder}>
           <button className={styles.gogBtn}>Sign in with Google</button>
-          <Image src={Facebook} alt="Facebook" />
+          <button className={styles.fbBtn}>
+            <Image src={Facebook} alt="Facebook" />
+          </button>
         </div>
         <div className={styles.orText}>
           <span>or</span>
